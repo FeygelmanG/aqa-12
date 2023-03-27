@@ -65,7 +65,7 @@ public class StoreTest extends BaseTest {
     @Test
     public void shouldGetOrderById() {
         requestSpec
-                .get("/store/order/9")
+                .get("/store/order/1")
                 .then()
                 .spec(responseOrderDto)
                 .body("status", equalTo("placed"));
